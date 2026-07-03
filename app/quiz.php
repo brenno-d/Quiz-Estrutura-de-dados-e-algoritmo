@@ -51,7 +51,6 @@ if ($_SESSION["questaoAtual"] >= 10) {
     exit;
 }
 
-// Questão atual para renderizar
 $idx = $_SESSION["questaoAtual"];
 $cdQuestaoAtual = $_SESSION["questoes"][$idx]["cd_questao"];
 

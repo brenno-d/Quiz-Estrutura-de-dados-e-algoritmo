@@ -1,33 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
-:root{
-    --verde:#CDF810;
-    --background:#111213;
-    --roxo:#513E83;
-    --branco:#FFFFFF;
-}
-html, body{
-    font-family:'Ubuntu',sans-serif;
-}
-.container-fluid{
-    background-color: var(--background);
-    color:var(--verde);
-    min-height:100vh;
-}
-.texto{
-    font-family:'Ubuntu',sans-serif;
-    color:var(--verde);
-    font-size:2rem;
-    text-align:center;
-    font-weight:400;
+:root {
+    --verde: #CDF810;
+    --background: #111213;
+    --roxo: #513E83;
+    --branco: #FFFFFF;
 }
 
-.status{
-    font-family:'Ubuntu',sans-serif;
-    color:var(--verde);
-    font-size:4rem;
-    text-align:center;
-    font-weight:500;
+html,
+body {
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    background-color: var(--background);
+    color: var(--verde);
+    min-height: 100vh;
+}
+
+.texto {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--verde);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.status {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--verde);
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 500;
 }
 
 .btn-primary {
@@ -44,24 +50,184 @@ html, body{
 
 .btn-primary:hover {
     background: #dfff45 !important;
-    transform: scale(1.03); 
-}
-.btn-primary{
-    background:var(--verde) !important;
-    border:none;
-    color:#000 !important;
-    font-weight:bold;
-    font-size:2rem !important;
-    font-family:'Ubuntu',sans-serif;
-    font-weight:700;
-    padding:15px 40px !important;
-    margin-bottom:20px;
+    transform: scale(1.03);
 }
 
-footer{
-    background:var(--verde);
-    color:#000;
-    text-align:center;
-    padding:10px;
-    font-weight:500;
+.btn-primary {
+    background: var(--verde) !important;
+    border: none;
+    color: #000 !important;
+    font-weight: bold;
+    font-size: 2rem !important;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    padding: 15px 40px !important;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: var(--verde);
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+}
+
+/* Estilos para o ranking */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--background);
+    color: var(--branco);
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 24px 16px 30px;
+}
+
+.bandeira {
+    width: 180px;
+    max-width: 20vw;
+    opacity: .95;
+    user-select: none;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 14px;
+    color: var(--verde);
+    font-size: 56px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.table-div {
+    margin: 10px auto 26px;
+    border-radius: 2px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 640px;
+    border: 1px solid var(--line);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+thead th {
+    background: var(--verde);
+    color: #0f1300;
+    font-size: 28px;
+    padding: 10px 8px;
+}
+
+thead th:last-child {
+    border-right: none;
+}
+
+tbody td {
+    background: var(--roxo);
+    border-top: 1px solid var(--preto);
+    border-right: 1px solid var(--preto);
+    height: 42px;
+    padding: 6px 8px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) td {
+    background: #3B1850;
+}
+
+tbody td:last-child {
+    border-right: none;
+}
+
+.btn-retornar {
+    display: inline-block;
+    min-width: 360px;
+    max-width: 90%;
+    padding: 18px 28px;
+    font-size: 44px;
+    color: #0a0d00;
+    background: var(--verde);
+    text-decoration: none;
+    position: relative;
+
+}
+
+
+.btn-retornar:before {
+    left: -26px;
+    border-right: 26px solid var(--verde);
+}
+
+.btn-retornar:after {
+    right: -26px;
+    border-left: 26px solid var(--verde);
+}
+
+.footer {
+    background: var(--verde);
+    color: #101500;
+    text-align: center;
+    padding: 8px 10px 12px;
+    font-size: 34px;
+    line-height: 1.1;
+}
+
+.footer .git {
+    display: block;
+    font-size: 40px;
+    margin-top: 2px;
+}
+
+@media (max-width: 980px) {
+    .bandeira {
+        display: none;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    thead th,
+    tbody td {
+        font-size: 20px;
+    }
+
+    .btn-retornar {
+        font-size: 34px;
+        min-width: 280px;
+    }
+
+    .git {
+        width: 30px;
+        height: 30px;
+    }
+
+    .table-div {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    thead th {
+        font-size: 0.9rem;
+        padding: 8px 4px;
+    }
 }

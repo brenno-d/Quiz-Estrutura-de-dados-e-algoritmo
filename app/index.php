@@ -36,8 +36,11 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="footer">
         Feito por Brenno
+        <a href="https://github.com/brenno-d" target="_blank">
+            <img class="git" src="assets/images/github_logo.png">
+        </a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

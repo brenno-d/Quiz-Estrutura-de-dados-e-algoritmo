@@ -6,7 +6,10 @@
     --roxo:#513E83;
     --branco:#FFFFFF;
 }
-
+.git {
+            width: 30px;
+            height: 30px;
+        }
 html{
     font-family:'Ubuntu',sans-serif;
     background-color: var(--background);
@@ -119,12 +122,6 @@ footer{
             font-weight: bold;
             background-color: var(--background);
         }
-
-        /* .container {
-            max-width: 1050px;
-            margin: 20px auto;
-            padding: 0 16px 24px;
-        } */
 
         .enunciado {
             font-size: 28px;

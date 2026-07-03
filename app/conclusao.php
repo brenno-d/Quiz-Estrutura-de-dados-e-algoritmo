@@ -28,7 +28,7 @@ $stmt->close();
             <h2 class="texto">Seu resultado:</h2>
             <h5 class="status"><?= $pontos ?>/10</h5>
             <h5 class="status"><?= gmdate("i:s", $tempo) ?></h5>
-            <a href="index.php" class="btn btn-primary">Ver o ranking</a>
+            <a href="ranking.php" class="btn btn-primary">Ver o ranking</a>
             <a href="index.php" class="btn btn-primary">Retornar</a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
