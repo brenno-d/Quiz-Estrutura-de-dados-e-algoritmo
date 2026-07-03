@@ -7,27 +7,28 @@
     --branco:#FFFFFF;
 }
 
-
+html{
+    font-family:'Ubuntu',sans-serif;
+    background-color: var(--background);
+    min-height:100vh;
+    color:var(--branco);
+}
 body{
     display:flex;
     flex-direction:column;
     min-height:100vh;
-
     font-family:'Ubuntu',sans-serif;
     background-color: var(--background);
     color:var(--branco);
 }
 
-/* NAVBAR */
 
 nav{
     background-color: var(--background);
     border-bottom:1px solid var(--verde);
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding:18px 40px;
 }
 
@@ -51,8 +52,6 @@ nav a{
 nav a:hover{
     text-decoration:underline;
 }
-
-/* CONTEÚDO */
 
 
 .card{
@@ -95,9 +94,6 @@ nav a:hover{
     padding:15px 40px !important;
 }
 
-
-/* FOOTER */
-
 footer{
     background:var(--verde);
     color:#000;
@@ -106,5 +102,63 @@ footer{
     font-weight:500;
 }
 .container-fluid{
+    flex:1;
     background:var(--background);
 }
+
+/* Quiz */
+
+        .topo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #c8ff00;
+            color: #c8ff00;
+            padding: 14px 24px;
+            font-size: 34px;
+            font-weight: bold;
+            background-color: var(--background);
+        }
+
+        /* .container {
+            max-width: 1050px;
+            margin: 20px auto;
+            padding: 0 16px 24px;
+        } */
+
+        .enunciado {
+            font-size: 28px;
+            line-height: 1.4;
+            margin-bottom: 24px;
+            white-space: pre-line;
+            color: var(--branco)
+        }
+
+        .alternativas form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn-alt {
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            background: #c8ff00;
+            color: #111;
+            font-weight: bold;
+            font-size: 30px;
+            font-family: monospace;
+            padding: 14px 16px;
+        }
+
+        .btn-alt:hover {
+            filter: brightness(.95);
+        }
+
+        .rodape {
+            margin-top: 20px;
+            color: #c8ff00;
+            font-size: 20px;
+            background-color: var(--background);
+        }

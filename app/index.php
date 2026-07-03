@@ -21,7 +21,7 @@
 
     <div class="container-fluid d-flex justify-content-center align-items-center flex-grow-1 col-12 col-md-12 col-lg-12">
         <div class="card text-center justify-content-center p-5 col-12 col-md-7 col-lg-5">
-            <h2>Insira seu nome para continuar</h2>
+            <h2>Insira seu nome para iniciar.</h2>
             <form action="quiz.php" method="POST">
                 <input
                     type="text"
